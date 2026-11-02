@@ -1,0 +1,5 @@
+{
+  "buildCommand": "npm run build --workspace client",
+  "outputDirectory": "client/dist",
+  "functions": { "api/[...path].js": { "maxDuration": 30 } }
+}
