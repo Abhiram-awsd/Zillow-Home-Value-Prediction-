@@ -35,7 +35,7 @@ The Vite client runs on `http://localhost:5173`; Express runs on `http://localho
 
 ## Model integration status
 
-The upstream repository [manishkolla/Zillow-Home-Value-Prediction](https://github.com/manishkolla/Zillow-Home-Value-Prediction) is a notebook/report project, not a ready-made prediction API. Its README mentions Random Forest, Linear Regression, and multiple imputation approaches. The notebook's exact feature schema, target, fitted preprocessing, estimator artifact, and evaluation results have **not yet been independently verified**.
+
 
 The API therefore fails closed with HTTP 503 until `MODEL_API_URL` points to an inference service wrapping the original fitted preprocessing + estimator pipeline. The Python adapter in `ml-service/` loads a joblib pipeline only when an audited feature list is supplied. Do not train a replacement model on guessed features or return a formula-based mock estimate.
 
