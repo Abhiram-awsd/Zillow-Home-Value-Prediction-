@@ -2,6 +2,7 @@
   "name": "zillow-home-value-prediction",
   "version": "1.0.0",
   "private": true,
+  "type": "module",
   "workspaces": ["client", "server"],
   "scripts": {
     "dev": "concurrently \"npm run dev -w server\" \"npm run dev -w client\"",

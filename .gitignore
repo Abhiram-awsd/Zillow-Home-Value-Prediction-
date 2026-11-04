@@ -7,3 +7,5 @@ server/.env
 ml-service/.venv
 ml-service/__pycache__
 ml-service/*.joblib
+ml-service/artifacts
+ml-service/data
